@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+  font-family: 'Matta';
+  src: url('/wp-content/themes/bmbmbm/fonts/Matta.woff');
+  src: url('/wp-content/themes/bmbmbm/fonts/Matta.woff2') format('woff2'), url('/wp-content/themes/bmbmbm/fonts/Matta.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hellfire';
+  src: url('/wp-content/themes/bmbmbm/fonts/Hellfire.eot');
+  src: url('/wp-content/themes/bmbmbm/fonts/Hellfire.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/bmbmbm/fonts/Hellfire.woff2') format('woff2'), url('/wp-content/themes/bmbmbm/fonts/Hellfire.woff') format('woff'), url('/wp-content/themes/bmbmbm/fonts/Hellfire.ttf') format('truetype'), url('/wp-content/themes/bmbmbm/fonts/Hellfire.svg#cavalcaderegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  background: #ffffff;
+  color: #000000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Matta', sans-serif;
+  font-size: 1em;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  font-family: 'Matta';
+}
+img {
+  border: #070000 solid 2px;
+  padding: 1vw;
+  width: 25%;
+  margin: 0 2vw 2vw 0;
+  height: auto;
+  float: left;
+}
+h1 {
+  margin: 0 0 2vw 0;
+  padding: 0;
+}
+h1 img, #basichead img, #bighead img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  float: none;
+}
+.basichead, #bighead {
+  width: 100vw;
+}
+.main {
+  padding: 0 5vw 5vw 5vw;
+  max-width: 1200px;
+  margin: auto;
+}
+.content {
+  border-top: #ffffff solid 2px;
+}
+.navigation {
+  border-right: #070000 solid 2px;
+  list-style: none;
+  margin: 0 2vw 2vw 0;
+  padding: 0;
+  width: 25%;
+  float: left;
+  min-height: 450vh;
+  text-transform: lowercase;
+  font-family: 'Hellfire';
+}
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 1.4vh 1vw;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-family: 'Hellfire';
+}
+#navigation li a:hover, .selected {
+  color: white !important;
+  background: #e71381;
+  font-family: 'Hellfire';
+}
+#page {
+  padding: 2vw 0 0 2vw;
+}
+.tracklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 74%;
+}
+.tracklist li {
+  padding: 1.7vw;
+  border-top: #070000 solid 2px;
+}
+.tracklist .btnset {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -1vh;
+}
+.btnset a {
+  display: inline-block;
+padding: 8px;
+  background: #e71381;
+    color:#fff;
+  /* border-image: linear-gradient(45deg, transparent 10%, #e71381 10%, #e71381 90%, transparent 90%) 22 fill / 13px; */
+}
+.btnset a:hover {
+  color: #000 !important;
+}
+form {
+  display: inline;
+}
+.g-recaptcha {
+  width: 304px;
+  display: inline-block;
+}
+@keyframes welcome {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -240vh;
+  }
+}
+.bighead {
+  animation-name: welcome;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.lyrics {
+  display: none;
+}
+.menubtn {
+  display: none;
+  text-decoration: underline;
+  color: #FFFFFF !important;
+  background: #e71381 !important;
+}
+.release_item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 5vh;
+}
+.release_item .tracklist {
+  width: 100%;
+}
+
+
+
+.fa-brands, .fab {
+    font-size:1.5em;
+    padding:5px;
+    color:#e71381;
+}
+
+.presave{
+    border:none;
+    width:70%;
+}
+
+
+.btn{padding: 13px 38px;
+  background: #e71381;
+    color:#fff;
+    font-family: 'Matta';
+  /* border-image: linear-gradient(45deg, transparent 10%, #e71381 10%, #e71381 90%, transparent 90%) 22 fill / 13px; */
+}
+
+.btn a:hover{
+    color:#000;
+}
+
+header {
+  width: 1436px;
+  height: 835px;
+}
+
+@media (orientation : portrait) {
+  body {
+    line-height: 1.5em;
+  }
+  @keyframes welcome {
+    from {
+      margin-top: 0;
+    }
+    to {
+      margin-top: -75vh;
+    }
+  }
+  .bighead {
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+  .menubtn {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 1vh;
+    color: #FFFFFF !important;
+    background: #e71381 !important;
+    text-decoration: underline;
+  }
+  .navigation {
+    border-right: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: none;
+    min-height: 10vh;
+    border-bottom: #070000 solid 2px;
+    display: none;
+  }
+  .tracklist {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    margin: 2vw 0
+  }
+}
